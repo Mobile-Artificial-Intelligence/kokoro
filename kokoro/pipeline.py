@@ -165,7 +165,7 @@ class KPipeline:
     Delimiter is optional and defaults to ','.
     """
     def load_voice(self, voice: Union[str, torch.FloatTensor], delimiter: str = ",") -> torch.FloatTensor:
-        if isinstance(voice, torch.FloatTensor):
+        if isinstance(voice, torch.Tensor):
             return voice
         if voice in self.voices:
             return self.voices[voice]
