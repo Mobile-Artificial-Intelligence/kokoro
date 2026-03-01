@@ -172,3 +172,5 @@ cython_debug/
 
 ignore/
 .DS_Store
+*.pt
+*.bin
